@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+ 
+project(webcam_test)
+find_package(OpenCV REQUIRED)
+add_executable(webcam_test main)
+target_link_libraries(webcam_test ${OpenCV_LIBS})
+
